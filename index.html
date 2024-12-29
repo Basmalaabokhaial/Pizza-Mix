@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="BASMALA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mix</title>
+    <link rel="icon" href="img/logo1.png">
+    <link rel="stylesheet" href="Pizza.css">
+    <script src="https://kit.fontawesome.com/beff90bf29.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+<!--------------------------------------------------->
+    <header>
+    <div class="nav">
+        <nav class="navbar">
+        <img src="img/logo.jpg" class="logo">
+        <ul class="ulnav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#conect">Conect</a></li>
+            <li><a href="Menue.html">Menue</a> 
+        </ul>
+        <form>
+        <input type="text" class="search" placeholder="Search">
+        <button type="reset" class="btsearch">search</button>
+        </form>
+        <div class="icon">
+          <i class="fas fa-user" onclick="showform()"></i>
+      </div>
+    </div></nav></header>
+
+  <div class="login-form">
+      <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+      <form action="">
+          <h2>login</h2>
+          <input type="email" class="box" placeholder="Enter your email">
+          <input type="password" class="box" placeholder="Enter your password">
+          <input type="submit" value="login now" class="btn">
+          <input type="checkbox" id="remember">
+          <label for="remmember"> remember me</label>
+          <p>forget password? <a href="">click here</a></p>
+          <p>don't have acount? <a href="">sign up</a></p>
+      </form>
+    </div><br>
+
+
+    <!----------------------Home---------------------------->
+    <div class="home">
+        <img src="img/Main.jpg" class="one" id="home">
+    </div><br><br><br><br><br><br><br>
+
+
+
+    <!------------------------About--------------------------->
+    <center>
+      <h1 class="hello">Pizza Mix</h1><br>
+    <div class="about" id="about">
+      <div class="imgabout">
+        <img src="img/about.jpg" style="width: 500px; height:300px;" class="imgabout1">
+      </div>
+      <div class="aboutpizza">
+        <div class="description">
+          <h1 class="kind">
+            <h1> Welcom </h1>
+          </h1>
+          <p class="des">  
+            Our Pizza Mix restaurant offers you the most <br> delicious and delicious types of Mix pizza <br>
+            with the most famous Arab and Italian chefs<br>
+            We use the best products and have everything<br>
+            Our pizza is the best tasting in Egypt...<br>
+            
+          </p>
+          <button type="submit" class="btlearn"><a href="#home" class="learn">Learn More</a></button>
+        </div>
+
+      </div>
+
+    </div></center><br><br><br><br><br><br><br><br><br>
+
+
+    <!-- ----------------------Gallary----------------------------- -->
+    <center>
+    <div id="gallary" class="gallary">
+      <div class="boxgallary">    <img src="img/gallary1.jpg">   </div>
+      <div class="boxgallary">    <img src="img/gallary2.png">   </div>
+      <div class="boxgallary">    <img src="img/gallary3.jpg">   </div>
+      <div class="boxgallary">    <img src="img/gallary4.jpg">   </div>
+      <div class="boxgallary">    <img src="img/gallary5.jpg">   </div>
+      <div class="boxgallary">    <img src="img/gallary6.jpg">   </div>
+
+    </div></center><br><br><br><br><br><br><br><br>
+
+
+<!-- --------------------------Footer----------------------------------- -->
+      <div id="conect">
+        <footer>
+    <section class="footer">
+      <div class="boxfooter">
+          <div class="box">
+              <h3>About Us</h3>
+              <p>Have a good day with Pizza Make.</p>
+              <p> Our goal is to make you happy. </p>
+              <p> Pizza Mix is number one. </p>
+          </div>
+
+          <div class="box">
+              <h3>Follow Us</h3>
+              <div class="box">
+              <div><a href="#"><i class="fa-brands fa-facebook"></i>   Facebook</a></div>
+              <div><a href="#"><i class="fa-brands fa-square-instagram"></i>   Instagram</a></div>
+              <div><a href="#"><i class="fa-brands fa-linkedin"></i>   linkedin</a></div>
+              <div><a href="#"><i class="fa-brands fa-square-twitter"></i>   Twitter</a></div>
+
+          </div></div>
+          <div class="box">
+            <h3>Times Of Work</h3>
+            <p> From Saturday to Sunday (11:12) </p>
+            <p> On Thursday and Friday (12:3) </p>
+            <h3> To Reservations </h3>
+            <p> +123-456-789 </p>
+          </div>
+      </div>
+  </section>
+        </footer>
+
+      </div>
+
+  <script>
+    let loginForm = document.querySelector(".login-form")
+    function showform(){
+      loginForm.classList.add("active")
+  }
+  function hideform(){
+      loginForm.classList.remove("active")
+  }
+  </script>
+
+</body>
+</html>
